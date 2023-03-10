@@ -1,0 +1,13 @@
+version: "3"
+services: 
+  
+  appium:
+    image: custom/appium
+    privileged: true
+    # Increase scale number if needed
+    scale: 1
+    volumes:
+      - ./video:/tmp/video
+    ports:
+    - "4723:4723"
+    - "6080:6080"
