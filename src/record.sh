@@ -4,7 +4,7 @@ function start() {
     mkdir -p $VIDEO_PATH
     name="$(date '+%d_%m_%Y_%H_%M_%S').mp4"
     echo "Start video recording"
-    ffmpeg -video_size 1599x899 -framerate 15 -f x11grab -i $DISPLAY $VIDEO_PATH/$name -y
+    ffmpeg -video_size 1280x720 -framerate 15 -f x11grab -i $DISPLAY $VIDEO_PATH/$name -y
 }
 
 function stop() {
