@@ -26,6 +26,7 @@ services:
      - SELENIUM_HOST=selenium_hub
      - MOBILE_WEB_TEST=true
      - AUTO_RECORD=true
+     - VIDEO_RES=1280x720
     ports:
     - "4723:4723"
     - "6080:6080"
