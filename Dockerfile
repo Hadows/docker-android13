@@ -145,6 +145,7 @@ ENV DISPLAY=:0 \
     LOCAL_PORT=5900 \
     TARGET_PORT=6080 \
     TIMEOUT=1 \
+    VIDEO_RES=1280x720 \
     VIDEO_PATH=/tmp/video \
     LOG_PATH=/var/log/supervisor
 
