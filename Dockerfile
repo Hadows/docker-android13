@@ -1,4 +1,4 @@
-FROM custom/appium2:latest
+FROM hadows/appium-dashboard:2
 
 LABEL maintainer "Budi Utomo <budtmo.os@gmail.com>"
 
