@@ -2,6 +2,8 @@ ARG BASE_IMAGE=ubuntu:bionic-20220801
 
 FROM ${BASE_IMAGE}
 
+USER root
+
 ENV BASE_IMAGE=${BASE_IMAGE} \
     SDK_VERSION=commandlinetools-linux-8512546_latest \
     ANDROID_BUILD_TOOLS_VERSION=33.0.0 \
@@ -138,6 +140,8 @@ ENV APPIUM_DRIVER_ESPRESSO_VERSION="2.15.1"
 ENV APPIUM_DRIVER_UIAUTOMATOR2_VERSION="2.12.2"
 RUN appium driver install espresso@${APPIUM_DRIVER_ESPRESSO_VERSION} && \
     appium driver install uiautomator2@${APPIUM_DRIVER_UIAUTOMATOR2_VERSION}
+
+RUN appium plugin install --source=npm appium-dashboard
 
 #==============
 # Start script

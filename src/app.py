@@ -128,7 +128,7 @@ def appium_run(avd_name: str):
     :param avd_name: Name of android virtual device / emulator
     """
     DEFAULT_LOG_PATH = '/var/log/supervisor/appium.log'
-    cmd = 'appium -p 4723 --base-path /wd/hub --log {log}'.format(log=os.getenv('APPIUM_LOG', DEFAULT_LOG_PATH))
+    cmd = 'appium -p 4723 --base-path /wd/hub --use-plugin=appium-dashboard  --log {log}'.format(log=os.getenv('APPIUM_LOG', DEFAULT_LOG_PATH))
 
     title = 'Appium Server'
     subprocess.check_call('xterm -T "{title}" -n "{title}" -e \"{cmd}\"'.format(title=title, cmd=cmd), shell=True)

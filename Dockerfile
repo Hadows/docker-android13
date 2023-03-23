@@ -1,4 +1,4 @@
-FROM custom/appium:latest
+FROM custom/appium2:latest
 
 LABEL maintainer "Budi Utomo <budtmo.os@gmail.com>"
 

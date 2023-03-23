@@ -14,7 +14,7 @@ services:
       - "4444:4444"
   
   samsung:
-    image: custom/android13
+    image: custom/android
     privileged: true
     # Increase scale number if needed
     scale: 1
