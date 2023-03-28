@@ -66,6 +66,7 @@ RUN apt-get -qqy update && apt-get -qqy install --no-install-recommends \
     libvirt-bin \
     ubuntu-vm-builder \
     bridge-utils \
+    wmctrl \
  && apt clean all \
  && rm -rf /var/lib/apt/lists/*
 
